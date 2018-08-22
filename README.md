@@ -1,0 +1,1 @@
+This is an Android native app created using Kotlin. This App shows Trending Android repositories.
