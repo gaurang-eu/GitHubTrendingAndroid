@@ -1,5 +1,5 @@
 /*
-    Gaurang Patel: Repository parser using anko db MapRowparser.
+    Gaurang Patel: Repository parser using anko db MapRowParser.
 
  */
 

@@ -1,5 +1,5 @@
 /*
-    Gaurang Patel: DBHelper to crete and manage DB and operations.
+    Gaurang Patel: DBHelper to create and manage DB and operations.
 
  */
 

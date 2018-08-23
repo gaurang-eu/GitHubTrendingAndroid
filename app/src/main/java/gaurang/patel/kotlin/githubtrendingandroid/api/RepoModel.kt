@@ -1,5 +1,5 @@
 /*
-    Gaurang Patel: Model that will used by Retrofit and local DB according to the current response of the API.
+    Gaurang Patel: Model that will be used by Retrofit and local DB according to the current response of the API.
 
  */
 

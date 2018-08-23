@@ -1,5 +1,5 @@
 /*
-    Gaurang Patel: Retrofit configuration and GET call to repositories with Query prarmeters, language and since.
+    Gaurang Patel: Retrofit configuration and GET call to repositories with Query parameters, language and since.
 
  */
 
@@ -15,10 +15,10 @@ import retrofit2.http.Query
 
 interface TrendingApi {
     @GET("repositories")
-    fun getTrendingReposWeekly(
+    fun getTrendingRepos(
             @Query("language") lang: String = "java",
             @Query("since") tredingSince: String = "weekly"
-    ): Observable<RepoModel.TrendingResponse>
+    ): Observable<List<RepoModel.TrendingResponse>>
     companion object {
         fun create(): TrendingApi {
             val baseUrl = "https://github-trending-api.now.sh/"
