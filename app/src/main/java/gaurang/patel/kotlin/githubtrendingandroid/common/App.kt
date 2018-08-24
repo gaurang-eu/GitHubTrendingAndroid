@@ -1,14 +1,9 @@
-/*
-    Gaurang Patel: Creating local db with DBHelper.
-
- */
-
 package gaurang.patel.kotlin.githubtrendingandroid.common
 
 import android.app.Application
 import gaurang.patel.kotlin.githubtrendingandroid.localdb.DBHelper
 
-class App: Application() {
+class App : Application() {
     companion object {
         lateinit var db: DBHelper
             private set

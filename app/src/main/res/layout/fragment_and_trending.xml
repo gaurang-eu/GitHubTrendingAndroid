@@ -2,37 +2,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:gravity="center"
+    android:orientation="vertical">
+
 
     <LinearLayout
+        android:id="@+id/ll_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_margin="10dp"
-        >
+        android:orientation="horizontal"
+        android:visibility="gone">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="From"
-            />
+            android:text="Select Period" />
+
         <Spinner
             android:id="@+id/spinnerFrom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:entries="@array/trending_when"
-            ></Spinner>
+            android:visibility="invisible"></Spinner>
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/trendingRecylerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="gone"
         tools:context="gaurang.patel.kotlin.githubtrendingandroid.fragments.TrendingFragment"
-        tools:listitem="@layout/item_and_trending">
+        tools:listitem="@layout/item_trending"></android.support.v7.widget.RecyclerView>
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Loading"
+        android:textSize="20sp" />
+
 
 </LinearLayout>
 

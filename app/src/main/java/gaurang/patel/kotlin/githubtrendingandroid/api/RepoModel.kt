@@ -7,8 +7,8 @@ package gaurang.patel.kotlin.githubtrendingandroid.api
 
 import com.google.gson.annotations.SerializedName
 
-object RepoModel{
-    data class TrendingResponse (
+object RepoModel {
+    data class TrendingResponse(
             val author: String,
             val name: String,
             val url: String,

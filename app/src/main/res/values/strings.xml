@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">GitHubTrendingAndroid</string>
     <string name="app_label">Trending Git Repos</string>
+    <string name="details_label">Repository Details</string>
     <string name="dummy_repo_name">Repository X</string>
     <string name="dummy_author_name">Author y</string>
     <string name="dummy_star">0</string>

@@ -19,6 +19,7 @@ interface TrendingApi {
             @Query("language") lang: String = "java",
             @Query("since") tredingSince: String = "weekly"
     ): Observable<List<RepoModel.TrendingResponse>>
+
     companion object {
         fun create(): TrendingApi {
             val baseUrl = "https://github-trending-api.now.sh/"

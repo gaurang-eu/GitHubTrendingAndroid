@@ -6,10 +6,10 @@
 
 package gaurang.patel.kotlin.githubtrendingandroid
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
+import android.support.v7.app.AppCompatActivity
 import gaurang.patel.kotlin.githubtrendingandroid.api.TrendingApi
 import gaurang.patel.kotlin.githubtrendingandroid.fragments.AndTrendingFragment
 import gaurang.patel.kotlin.githubtrendingandroid.fragments.KotlinTrendingFragment
@@ -22,17 +22,17 @@ class MainActivity : AppCompatActivity() {
         TrendingApi.create();
     }
 
-//    Creating KotlinTrendingFragment instance
+    //    Creating KotlinTrendingFragment instance
     val kotlinTrendingFragment: KotlinTrendingFragment by lazy {
         KotlinTrendingFragment.newInstance();
     }
 
-//    Creating AndTrendingFragment instance
+    //    Creating AndTrendingFragment instance
     val andTrendingFragment: AndTrendingFragment by lazy {
         AndTrendingFragment.newInstance();
     }
 
-//    Register onNavigationItemSelected listener
+    //    Register onNavigationItemSelected listener
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
